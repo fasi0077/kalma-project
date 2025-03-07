@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Kalmas of Islam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e0f7fa;
+            font-family: 'Noto Nastaliq Urdu', serif;
+            overflow-x: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .a4-page {
+            width: 90%;
+            max-width: 794px;
+            background: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .bismillah {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #00796b;
+            font-family: 'Noto Nastaliq Urdu', serif;
+            text-align: center;
+        }
+        .kalma-container {
+            background: #fff176;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        .kalma {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #004d40;
+        }
+        .full-text {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #333;
+            max-width: 700px;
+            word-wrap: break-word;
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .heading {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-decoration: underline;
+            color: #004d40;
+        }
+        .full-urdu {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            direction: rtl;
+        }
+        .kalma-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .word-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            padding: 10px;
+            width: 140px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .arabic {
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: green;
+            border-bottom: 2px solid black;
+        }
+        .urdu {
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: none;
+        }
+        .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    direction: ltr; /* Forces left-to-right order */
+}
+
+
+.buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px; /* Increased size */
+    width: 65px; /* Increased size */
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px; /* Slightly bigger text */
+    font-weight: bold;
+    color: black; /* Text color remains black */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fixed button colors */
+.buttons a:nth-child(1) { background-color: #e57373; } /* Red */
+.buttons a:nth-child(2) { background-color: #ffb74d; } /* Orange */
+.buttons a:nth-child(3) { background-color: #fff176; } /* Yellow */
+.buttons a:nth-child(4) { background-color: #81c784; } /* Green */
+.buttons a:nth-child(5) { background-color: #64b5f6; } /* Blue */
+.buttons a:nth-child(6) { background-color: #ba68c8; } /* Purple */
+
+/* Hover Effect: Lighter Shade Moves Up */
+
+
+/* CSS */
+a {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+a:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+a:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-10px);
+}
+
+a:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.full-text {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #333;
+            font-family: "Delius", cursive;
+        }
+        .heading {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-decoration: underline;
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <div class="a4-page">
+        <div class="bismillah">بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        
+        <div class="kalma-container">
+            <div class="kalma">تیسرا کلمہ: تمجید</div>
+            <div class="kalma-box">
+                <div class="word-box"><div class="arabic">سُبْحَانَ</div><div class="urdu">پاک ہے</div></div>
+                <div class="word-box"><div class="arabic">اللَّهِ</div><div class="urdu">اللہ</div></div>
+                <div class="word-box"><div class="arabic">وَالْحَمْدُ</div><div class="urdu">اور سب تعریفیں</div></div>
+                <div class="word-box"><div class="arabic">لِلَّهِ</div><div class="urdu">اللہ ہی کے لیے ہیں</div></div>
+                <div class="word-box"><div class="arabic">وَلَا</div><div class="urdu">اور نہیں</div></div>
+                <div class="word-box"><div class="arabic">إِلَٰهَ</div><div class="urdu">کوئی معبود</div></div>
+                <div class="word-box"><div class="arabic">إِلَّا</div><div class="urdu">سوائے</div></div>
+                <div class="word-box"><div class="arabic">اللَّهُ</div><div class="urdu">اللہ کے</div></div>
+                <div class="word-box"><div class="arabic">وَاللَّهُ</div><div class="urdu">اور اللہ</div></div>
+                <div class="word-box"><div class="arabic">أَكْبَرُ</div><div class="urdu">سب سے بڑا ہے</div></div>
+                <div class="word-box"><div class="arabic">وَلَا</div><div class="urdu">اور نہیں</div></div>
+                <div class="word-box"><div class="arabic">حَوْلَ</div><div class="urdu">طاقت</div></div>
+                <div class="word-box"><div class="arabic">وَلَا</div><div class="urdu">اور نہ</div></div>
+                <div class="word-box"><div class="arabic">قُوَّةَ</div><div class="urdu">قوت</div></div>
+                <div class="word-box"><div class="arabic">إِلَّا</div><div class="urdu">مگر</div></div>
+                <div class="word-box"><div class="arabic">بِاللَّهِ</div><div class="urdu">اللہ کے ساتھ</div></div>
+                <div class="word-box"><div class="arabic">الْعَلِيِّ</div><div class="urdu">بلند</div></div>
+                <div class="word-box"><div class="arabic">الْعَظِيمِ</div><div class="urdu">عظمت والا ہے</div></div>
+            </div>
+            <div class="heading">Full Arabic</div>
+            <div class="full-text">سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلٰهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ</div>
+            <div class="heading">Full Urdu</div>
+            <div class="full-text full-urdu">پاک ہے اللہ، تمام تعریفیں اللہ کے لیے ہیں، نہیں کوئی معبود سوائے اللہ کے، اور اللہ سب سے بڑا ہے، نہیں طاقت اور قوت مگر اللہ کی مدد سے، جو بلند و برتر اور عظیم ہے۔</div>
+            <div class="heading">Full English</div>
+            <div class="full-text">.Glory be to Allah, and all praise is for Allah, and there is no deity except Allah, and Allah is the Greatest. There is no power and no strength except with Allah, the Most High, the Most Great</div>
+
+        </div>
+
+        <div class="buttons">
+            <a href="index.html">1</a>
+            <a href="kalma2.htm">2</a>
+            <a href="kalma3.htm">3</a>
+            <a href="kalma4.html">4</a>
+            <a href="kalma5.htm">5</a>
+            <a href="kalma6.htm">6</a>
+        </div>
+    </div>
+</body>
+</html>
